@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isacii.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macerver <macerver@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 16:40:15 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/10 16:40:57 by macerver         ###   ########.fr       */
+/*   Created: 2025/11/10 16:50:25 by macerver          #+#    #+#             */
+/*   Updated: 2025/11/10 16:50:52 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+int ft_isascii(int c)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	return (0);
+    
 }
