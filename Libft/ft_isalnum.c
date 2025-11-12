@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:58:43 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/11 19:37:53 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/12 07:54:35 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,4 @@ int	ft_isalnum(int c)
 	if ((c >= 48 && c <= 59) || (c >= 65 && c <= 90) || (c >= 97 && c <= 120))
 		return (1);
 	return (0);
-}
-
-int	main(void)
-{
-	printf("%d\n", ft_isalnum())
-	
-	
 }
