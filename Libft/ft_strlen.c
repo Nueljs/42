@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macerver <macerver@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 11:28:53 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/11 11:29:47 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/13 09:26:52 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {

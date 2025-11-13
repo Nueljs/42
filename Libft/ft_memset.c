@@ -6,13 +6,13 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 11:33:23 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/13 00:57:23 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/13 09:33:43 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, unsigned int n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*s2;
 	size_t	i;

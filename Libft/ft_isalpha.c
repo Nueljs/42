@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macerver <macerver@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:55:45 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/10 13:56:05 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/13 09:32:55 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	isalpha(int c)
 {

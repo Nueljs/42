@@ -1,4 +1,4 @@
-NAME := libft
+NAME := libft.a
 CC := cc
 CFLAGS := -Wall -Werror -Wextra
 SRC = ft_bzero.c ft_isascii.c ft_isalnum.c ft_isalpha.c ft_isdigit.c ft_isprint.c \
