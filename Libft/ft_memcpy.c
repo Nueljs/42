@@ -1,37 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/11 11:33:23 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/13 11:43:03 by macerver         ###   ########.fr       */
+/*   Created: 2025/11/13 10:49:43 by macerver          #+#    #+#             */
+/*   Updated: 2025/11/13 12:55:02 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*s2;
+	unsigned char	*tmpdest;
+	unsigned char	*tmpsrc;
 	size_t			i;
 
+	if (!src || !dest)
+		return (dest);
 	i = 0;
-	s2 = (unsigned char *) s;
+	tmpsrc = (unsigned char *) src;
+	tmpdest = (unsigned char *) dest;
 	while (i < n)
 	{
-		s2[i] = (unsigned char) c;
+		tmpdest[i] = tmpsrc[i];
 		i++;
 	}
-	return (s);
+	return (dest);
 }
-/*
-int	main(void)
-{
-	char str[7] = "hola 2";
-	ft_memset(str, '~', 3);
-	puts(str);
-	return (0);
 
-}*/
+// int	main(void)
+// {
+// 	char	dest[12];
+// 	char	*src = "hola";
+// 	ft_memcpy(dest, src, 2);
+// 	puts(dest);
+// 	return (0);
+// }

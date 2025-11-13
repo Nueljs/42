@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/11 11:33:23 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/13 11:43:03 by macerver         ###   ########.fr       */
+/*   Created: 2025/11/13 14:12:13 by macerver          #+#    #+#             */
+/*   Updated: 2025/11/13 14:49:23 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned char	*s2;
-	size_t			i;
+	size_t	src_len;
+	int		i;
 
-	i = 0;
-	s2 = (unsigned char *) s;
-	while (i < n)
+	src_len = ft_strlen(src) + 1;
+	if (src_len > size)
+		return (src_len);
+	while (size-- > 0)
 	{
-		s2[i] = (unsigned char) c;
+		dst[i++] = src[i++];
+	}
+	while (i < size - 1)
+	{
+		dst[i] = '\0';
 		i++;
 	}
-	return (s);
+	return (src_len);
 }
-/*
-int	main(void)
-{
-	char str[7] = "hola 2";
-	ft_memset(str, '~', 3);
-	puts(str);
-	return (0);
-
-}*/
