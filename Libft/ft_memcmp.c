@@ -1,39 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 13:20:03 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/14 16:36:43 by macerver         ###   ########.fr       */
+/*   Created: 2025/11/14 16:38:48 by macerver          #+#    #+#             */
+/*   Updated: 2025/11/14 16:39:42 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*s2;
-	size_t			i;
-	unsigned char	cc;
-
-	s2 = (unsigned char *) s;
-	cc = (unsigned char) c;
-	i = 0;
-	while (i < n)
-	{
-		if (s2[i] == cc)
-			return ((void *) &s2[i]);
-		i++;
-	} 
-	return (NULL);
-}
-
-int main(void)
-{
-	const void	*s = "hola";
-	void	*ptr = ft_memchr(s, 'x', 3);
-	printf("Carácter encontrado: %c\n", *(unsigned char *)ptr);
-	return 0;
+	
 }
