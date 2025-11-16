@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 15:22:18 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/15 15:43:16 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:23:23 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_atoi(char *nptr)
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if(nptr[i] == '+')
+		if (nptr[i] == '+')
 			i++;
 		else if (nptr[i] == '-')
 		{
@@ -41,8 +41,8 @@ int	ft_atoi(char *nptr)
 	return (result * sign);
 }
 
-int	main(void)
-{
-	printf("%d", ft_atoi("     	+-123aaa"));
-	return 0;
-}
+// int	main(void)
+// {
+// 	printf("%d", ft_atoi("     	+-123aaa"));
+// 	return 0;
+// }

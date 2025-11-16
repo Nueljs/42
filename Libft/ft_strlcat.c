@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 19:39:31 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/13 20:18:48 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/16 18:46:55 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 	return (dst_len + src_len);
 }
 
-int	main(void)
-{
-	char dst[8] = "Hola";
-	char src[] = " mundo";
-	printf("%zu\n", ft_strlcat(dst, src, 8));
-	printf("%s", dst);
-	return 0;
-}
+// int	main(void)
+// {
+// 	char dst[8] = "Hola";
+// 	char src[] = " mundo";
+// 	printf("%zu\n", ft_strlcat(dst, src, 8));
+// 	printf("%s", dst);
+// 	return 0;
+// }

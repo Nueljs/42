@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 13:20:03 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/14 16:36:43 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:14:52 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		if (s2[i] == cc)
 			return ((void *) &s2[i]);
 		i++;
-	} 
+	}
 	return (NULL);
 }
 
-int main(void)
-{
-	const void	*s = "hola";
-	void	*ptr = ft_memchr(s, 'x', 3);
-	printf("Carácter encontrado: %c\n", *(unsigned char *)ptr);
-	return 0;
-}
+// int main(void)
+// {
+// 	const void	*s = "hola";
+// 	void	*ptr = ft_memchr(s, 'x', 3);
+// 	printf("Carácter encontrado: %c\n", *(unsigned char *)ptr);
+// 	return 0;
+// }

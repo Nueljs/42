@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 16:38:48 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/15 14:01:46 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/16 18:46:37 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d", ft_memcmp("abb","abc", 4));
-	return 0;
-}
+// int	main(void)
+// {
+// 	printf("%d", ft_memcmp("abb","abc", 4));
+// 	return 0;
+// }

@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 14:02:51 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/15 15:15:13 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/16 18:47:05 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%s", ft_strnstr("hello world", "wor", 7));
-	return 0;
-}
+// int	main(void)
+// {
+// 	printf("%s", ft_strnstr("hello world", "wor", 7));
+// 	return 0;
+// }

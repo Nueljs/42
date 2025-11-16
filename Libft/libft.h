@@ -6,16 +6,16 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:52:47 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/16 11:49:45 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:30:26 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+# include <stdlib.h>
+# include <stdio.h>
+# include <string.h>
 
 int		is_alpha(int c);
 int		is_digit(int c);
@@ -37,5 +37,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_calloc(size_t nmemb, size_t size);
-
+char	*ft_strdup(const char *s);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 #endif
