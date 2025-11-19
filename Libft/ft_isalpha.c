@@ -6,13 +6,13 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:55:45 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/13 09:32:55 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/19 16:10:07 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 60 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
