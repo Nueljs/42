@@ -6,11 +6,24 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 06:19:59 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/20 06:42:01 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/20 17:23:49 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	count_digits(long n)
+{
+	int	len;
+
+	len = 0;
+	while (n)
+	{
+		n /= 10;
+		len++;
+	}
+	return (len);
+}
 
 char	*ft_itoa(int n)
 {
@@ -18,20 +31,13 @@ char	*ft_itoa(int n)
 	int		n_len;
 	long	aux;
 	int		offset;
-	long	tmp;
 
 	if (n == 0)
 		return (ft_strdup("0"));
 	aux = n;
 	if (aux < 0)
 		aux = -aux;
-	n_len = 0;
-	tmp = aux;
-	while (tmp != 0)
-	{
-		tmp /= 10;
-		n_len++;
-	}
+	n_len = count_digits(aux);
 	offset = (n < 0);
 	my_n = malloc(n_len + offset + 1);
 	if (!my_n)
@@ -47,12 +53,12 @@ char	*ft_itoa(int n)
 	return (my_n);
 }
 
-int	main (void)
-{
-	puts(ft_itoa(349));
-	puts(ft_itoa(-342));
-	puts(ft_itoa(-2147483648));
-	// puts(ft_itoa(349));
-	// puts(ft_itoa(349));
-	return 0;
-}
+// int	main (void)
+// {
+// 	puts(ft_itoa(349));
+// 	puts(ft_itoa(-342));
+// 	puts(ft_itoa(-2147483648));
+// 	// puts(ft_itoa(349));
+// 	// puts(ft_itoa(349));
+// 	return 0;
+// }
