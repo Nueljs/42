@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 10:47:45 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/16 18:52:28 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/21 18:35:35 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strchr(const char *s, int c)
 
 // int	main(void)
 // {
-// 	char	*s = "hola ladron de paz";
-// 	printf("%s", ft_strchr(s, ' '));
+// 	char	*s = "teste";
+// 	printf("%s", ft_strchr(s, 'e'));
 // 	return 0;
 // }

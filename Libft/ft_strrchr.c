@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 11:58:34 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/19 01:41:11 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/21 18:43:31 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,17 @@ char	*ft_strrchr(const char *s, int c)
 	len = i;
 	while (len >= 0)
 	{
-		if (s[i] == cc)
+		if (s[len] == cc)
 			return ((char *) &s[len]);
 		len--;
 	}
 	return (NULL);
 }
 
+
 // int	main(void)
 // {
-// 	char *s = "hola como estas";
-// 	printf("%s", ft_strrchr(s, 'x'));
+// 	char	*s = "teste";
+// 	printf("%s", ft_strrchr(s, 'e'));
 // 	return 0;
 // }

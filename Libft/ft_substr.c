@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 16:55:48 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/16 20:46:39 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/21 19:45:09 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*dest;
 	size_t	i;
+	size_t	s_len;
 
 	i = 0;
 	if (!s)
 		return (NULL);
-	if (start > (unsigned int) ft_strlen(s))
-	{
-		dest = malloc(1);
-		dest[i] = '\0';
-		return (dest);
-	}
-	if (len > (size_t) ft_strlen(s + start))
-		len = ft_strlen(s + start);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+		return (ft_strdup(""));
+	if (len > s_len - start)
+		len = s_len - start;
 	dest = malloc((len + 1) * sizeof(char));
 	if (!dest)
 		return (NULL);
-	while (i < len && s[start])
+	while (i < len)
 	{
 		dest[i] = s[start + i];
 		i++;
@@ -42,7 +40,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 // int	main(void)
 // {
-// 	char *s = ft_substr("lorem ipsum dolor sit amet", 400, 20);
+// 	char *s = ft_substr("", 1, 1);
 // 	printf("%s", s);
 // 	free (s);
 // 	return 0;

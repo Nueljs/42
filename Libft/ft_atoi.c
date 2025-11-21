@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 15:22:18 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/16 19:23:23 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/21 18:18:53 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_atoi(char *nptr)
 	i = 0;
 	result = 0;
 	sign = 1;
-	while (nptr[i] == 32 || nptr[i] >= 9 && nptr[i] <= 13)
+	while (nptr[i] == 32 || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{

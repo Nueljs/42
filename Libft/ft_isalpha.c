@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:55:45 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/19 16:10:07 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/21 18:25:49 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 60 && c <= 90) || (c >= 97 && c <= 122))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
 	return (0);
 }
+// int	main(void)
+// {
+// 	printf("%d", ft_isalpha('<'));
+// 	return 0;
+// }
