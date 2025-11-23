@@ -6,7 +6,7 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 22:39:21 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/23 22:43:39 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/23 22:52:26 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	while (lst)
+	t_list	*last;
+
+	if (lst -> next == NULL)
+		return (lst);
+	else
 	{
-		lst = lst -> next;
-		if (lst -> next == NULL)
-			return (lst);
+		last = lst -> next;
+		ft_lstlast(last);
 	}
-	return (lst);
 }
