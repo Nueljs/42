@@ -6,17 +6,21 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:52:47 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/22 19:29:26 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/23 22:38:41 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
-# include <string.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -52,4 +56,8 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 char	*ft_strtrim(char const *s1, char const *set);
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
 #endif

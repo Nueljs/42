@@ -6,11 +6,30 @@
 /*   By: macerver <macerver@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 10:39:33 by macerver          #+#    #+#             */
-/*   Updated: 2025/11/22 19:52:42 by macerver         ###   ########.fr       */
+/*   Updated: 2025/11/23 19:42:29 by macerver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	real_len(int *s_len, int *s1_len, const char *set, const char *s1)
+{
+	int	i;
+
+	i = 0;
+	while (ft_strchr(set, s1[i]))
+	{
+		i++;
+		(*s1_len)--;
+	}
+	(*s_len)--;
+	while (ft_strchr(set, s1[*s_len]) && *s_len >= 0)
+	{
+		(*s_len)--;
+		(*s1_len)--;
+	}
+	return (i);
+}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -23,18 +42,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (s1_len == 0)
 		return (ft_strdup(""));
 	s_len = s1_len;
-	i = 0;
-	while (ft_strchr(set, s1[i]))
-	{
-		i++;
-		s1_len--;
-	}
-	s_len--;
-	while (ft_strchr(set, s1[s_len]) && s_len >= 0)
-	{
-		s1_len--;
-		s_len--;
-	}
+	i = real_len(&s_len, &s1_len, set, s1);
 	if (s_len < 0)
 		return (ft_strdup(""));
 	new_s = malloc(s1_len + 1);
